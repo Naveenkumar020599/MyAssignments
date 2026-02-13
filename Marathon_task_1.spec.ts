@@ -15,10 +15,6 @@ test("Book Ticket",async({page})=>{
 
     await page.locator("//span[text()='INOX The Marina Mall, OMR, Chennai']").click()
 
-    //await page.locator("//span[text()='Select Date']").click()
-
-    //await page.locator("//li[@class='p-dropdown-item']/span[1]").first().click()
-
     await page.locator("//span[text()='Today']").click()
 
     await page.getByText("O ROMEO").nth(1).click()
@@ -42,3 +38,4 @@ test("Book Ticket",async({page})=>{
     await page.waitForTimeout(3000)
 
 })
+
