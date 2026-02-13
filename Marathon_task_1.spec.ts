@@ -1,6 +1,6 @@
 import test from '@playwright/test'
 
-test("task 1",async({page})=>{
+test("Book Ticket",async({page})=>{
     await page.goto("https://www.pvrcinemas.com/")
 
     await page.locator("//input[@class='p-inputtext p-component p-autocomplete-input p-autocomplete-input']").fill("chennai")
@@ -40,4 +40,5 @@ test("task 1",async({page})=>{
 
     await page.locator("//button[text()='Proceed']").click()
     await page.waitForTimeout(3000)
+
 })
